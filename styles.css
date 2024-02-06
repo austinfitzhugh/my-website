@@ -1,11 +1,25 @@
+header {
+    margin-bottom: 60px;
+}
+
+#headh3 {
+    text-align: center;
+}
+
 h3 {
-    color: rgb(47, 79, 79);
+    color: rgb(255, 255, 255);
     font-size: 95%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     margin-left: 60px;
     margin-right: 60px;
+    background-image:linear-gradient(rgb(0, 128, 60), rgba(0, 0, 255, 0.679))
+}
+
+main {
+    color:rgb(245, 245, 245);
 }
 
 ol > li {
@@ -14,6 +28,8 @@ ol > li {
 
 h1 {
     text-decoration: underline;
+    color: rgb(0, 0, 0);
+    margin-left: 15em;
 }
 
 #PC_builder_link {
@@ -30,4 +46,18 @@ img {
 
 footer {
     text-align: center;
+}
+
+#secondtip {
+    margin-top: 60px;
+}
+
+nav {
+    text-align: center;
+    font-size: 110%;
+    word-spacing: 1em;
+}
+/* cant figure out how to change color of page links */
+pages {
+    color: white;
 }
