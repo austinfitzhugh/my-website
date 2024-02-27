@@ -1,3 +1,4 @@
+/* -----------homepage------------ */
 header {
     margin-bottom: 60px;
     text-align: center;
@@ -46,6 +47,10 @@ ol>li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+ul>li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 h1 {
     text-decoration: underline;
     color: rgb(0, 0, 0);
@@ -84,7 +89,7 @@ footer {
 #secondtip {
     margin-top: 20px;
 }
-
+/* -----------History page------------ */
 .history-main {
     display: flex;
     justify-content: center;
@@ -147,7 +152,7 @@ figcaption {
     border-bottom: double rgb(0, 0, 0);
     text-decoration: underline;
 }
-
+/* -------------Navigation menu-------------- */
 nav {
     text-align: center;
     font-size: 120%;
@@ -166,6 +171,10 @@ nav ul li {
     display: inline;
     width: 33%;
     float: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(12, 12, 12, 0.855);
 }
 
 nav ul li a {
