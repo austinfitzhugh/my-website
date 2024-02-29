@@ -27,16 +27,32 @@ main {
 }
 
 main.tips-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "tips1 tips2"
+    "tips3 tips4";
     padding: 20px;
 }
+
+#tips1 {
+    grid-area: tips1;
+}
+#tips2 {
+    grid-area: tips2;
+}
+#tips3 {
+    grid-area: tips3;
+}
+#tips4 {
+    grid-area: tips4;
+}
+
 /* adds box around each tip */
 div.tips {
-    flex: 0 1 calc(50% - 20px);
-    max-width: 600px;
+
     padding: 20px;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 5px;
@@ -228,15 +244,16 @@ nav ul li a {
 /* For less open space around tips when shrinking resolution */
 @media only screen and (max-width:1278px) {
     main.tips-container {
-        display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 1px;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "tips1"
+        "tips2"
+        "tips3"
+        "tips4";
+        grid-gap: 20px;
     }
 
     body {
-        margin-left: 0px;
-        margin-right: 0px;
     }
 }
