@@ -1,0 +1,10 @@
+1. the text could benefit from having a tiny bit of spacing, and could also potentially be a bit larger.
+
+To increase the text size and spacing i added a <p> tag in the CSS and added padding-bottom 10px; and font-size: 110%;
+
+
+2. through my quick look through of your website, I did notice a few grammar errors.
+
+To fix all the grammar errors i copied all of my html code and pasted it into chatgpt and told it to fix any grammar errors.
+
+
