@@ -181,6 +181,11 @@ body {
   hr {
     border-color: rgba(255,255,255,.6);
   }
+
+  footer {
+    text-align: center;
+    margin-top: 200px;
+  }
   
   /* Begin Media Queries*/
   @media screen and (max-width: 850px) {
