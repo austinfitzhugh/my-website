@@ -2,7 +2,7 @@
 header {
     margin-bottom: 60px;
     text-align: center;
-    font-size: 120%;
+    font-size: 140%;
 }
 
 #headh3 {
@@ -23,7 +23,7 @@ h3 {
 body {
     margin-left: 60px;
     margin-right: 60px;
-    background-image: linear-gradient(rgb(0, 128, 60), rgba(0, 0, 255, 0.679))
+    background-image: linear-gradient(rgb(0, 128, 60), rgba(25, 0, 230, 0.679))
 }
 
 main {
@@ -37,20 +37,23 @@ main.tips-container {
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
-    "tips1 tips2"
-    "tips3 tips4";
+        "tips1 tips2"
+        "tips3 tips4";
     padding: 20px;
 }
 
 #tips1 {
     grid-area: tips1;
 }
+
 #tips2 {
     grid-area: tips2;
 }
+
 #tips3 {
     grid-area: tips3;
 }
+
 #tips4 {
     grid-area: tips4;
 }
@@ -77,8 +80,8 @@ h1 {
     color: rgb(0, 0, 0);
     text-align: center;
     font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+    font-weight: 600;
+    font-style: normal;
 }
 
 #secondtip {
@@ -105,12 +108,14 @@ img {
 
 footer {
     text-align: center;
+    color: rgb(235, 235, 235);
 }
+
 /* ---------------Oporating system page------------------ */
 #software-header {
     font-weight: 600;
-    font-size: 320%;
-    padding-bottom: 50px;
+    font-size: 270%;
+    padding-bottom: 20px;
     border-bottom: double rgb(0, 0, 0);
     text-decoration: underline;
     font-family: "Kanit", sans-serif;
@@ -132,7 +137,7 @@ figcaption {
 /* Operating systems grid format */
 .grid-container {
     display: grid;
-    grid-template-rows:auto 3fr;
+    grid-template-rows: auto 3fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding: 20px;
@@ -148,6 +153,10 @@ figcaption {
     margin: 35px;
 }
 
+.OS-hover:hover {
+    border-color: rgb(0, 255, 255);
+}
+
 /* -----------History page------------ */
 .history-main {
     display: flex;
@@ -161,7 +170,7 @@ figcaption {
     text-align: center;
     line-height: 1.5em;
     font-size: 105%;
-    border:solid black;
+    border: solid black;
     margin: 20px 0;
     padding: 20px;
 }
@@ -176,12 +185,13 @@ figcaption {
 #history-header {
     font-weight: 600;
     font-size: 320%;
-    padding-bottom: 50px;
-    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
     text-decoration: underline;
     font-family: "Kanit", sans-serif;
     font-style: normal;
 }
+
 /* ----------------table for milestones in history------------------- */
 .history-table {
     width: 100%;
@@ -194,7 +204,8 @@ figcaption {
     margin-bottom: 10px;
 }
 
-.history-table th, .history-table td {
+.history-table th,
+.history-table td {
     border: 3px solid #000000;
     padding: 8px;
     text-align: left;
@@ -269,7 +280,7 @@ nav ul li a {
 
     body {
         margin-left: 30px;
-        
+
     }
 }
 
@@ -285,16 +296,17 @@ nav ul li a {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 /* For less open space around tips when shrinking resolution */
 @media only screen and (max-width:1278px) {
     main.tips-container {
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "tips1"
-        "tips2"
-        "tips3"
-        "tips4";
+        grid-template-areas:
+            "tips1"
+            "tips2"
+            "tips3"
+            "tips4";
         grid-gap: 20px;
     }
 }
